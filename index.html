@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yoshihara Group, University of Hawaii at Manoa</title>
+    <link rel="stylesheet" href="style.css?v=20260524c">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="figures/UHlogo.png" alt="University of Hawaii Logo" class="logo">
+            <h1>Yoshihara Group, University of Hawaii at Manoa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="member.html">Members</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="prospective.html">Prospective Students</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-copy">
+            <p class="eyebrow">University of Hawaii at Manoa</p>
+            <h2>Particle physics, detector electronics, and real-time intelligence from Hawaii.</h2>
+            <p>
+                The Yoshihara Group builds instrumentation and analysis tools for Belle II, SuperKEKB,
+                and future accelerator experiments.
+            </p>
+            <div class="hero-actions">
+                <a href="research.html">Explore Research</a>
+                <a href="prospective.html">Join the Group</a>
+            </div>
+        </div>
+        <div class="hero-media" aria-label="Detector electronics">
+            <img src="figures/topbs.png" alt="TOP detector electronics board stack">
+            <div class="hero-research-area">
+                <img src="figures/research_area.jpg" alt="Research areas connecting physics, computer science, and electrical engineering">
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- About Me -->
+        <section id="intro" class="split-section">
+            <div>
+                <p class="section-kicker">About</p>
+                <h2>Yoshihara Group</h2>
+                <div class="about-content">
+                    <img src="figures/running_photo.jpg" alt="Keisuke Yoshihara after a race in Hawaii" class="about-photo about-photo-tall">
+                    <div class="about-text">
+                        <p>I am an Assistant Professor of Physics at the University of Hawaii at Mānoa.
+                        I work on collider experiments (SuperKEKB/Belle II) to search for physics beyond
+                        the Standard Model. Previously, I was a member of the ATLAS experiment at CERN.
+                        </p>
+                        <p>My group also develops detector and readout systems,
+                        including low-latency AI/ML on hardware.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="signal-panel">
+                <span>Particle Physics</span>
+                <span>Fast Electronics</span>
+                <span>Hawaii</span>
+            </div>
+        </section>
+
+	<!-- News -->
+	<section id="news" class="feature-section">
+	    <p class="section-kicker">Latest</p>
+	    <h2>News</h2>
+	    <ul class="news-list">
+		<!--
+		<li>
+		    <span class="news-date">May 2026</span>
+		    The group received research funding for open-source ASIC R&amp;D in FY2026.
+		</li>
+		-->
+		<li>
+		    <span class="news-date">June 2026</span>
+		    The US-Japan Program awarded three-year funding for the SuperKEKB XRM project, an ultrafast beam-size measurement effort with Yoshihara as Co-PI.
+		    <a href="https://www.phys.hawaii.edu/uhm-physicists-contribute-to-us-japan-project-to-advance-accelerator-diagnostics/">Read the department news</a>.
+		</li>
+		<li>
+		    <span class="news-date">Mar 20, 2026</span>
+		    The UH News press release highlighted Christopher Ketter's Belle II Technical Thesis Award.
+		    <a href="https://www.hawaii.edu/news/2026/03/20/ketter-physics-honor/">Read the press release</a>.
+		</li>
+		<li>
+		    <span class="news-date">Feb 25, 2026</span>
+		    Beam Instrumentation Workshop will be held at the University of Hawaiʻi at Mānoa.
+		</li>
+		<li>
+		    <span class="news-date">Feb 2026</span>
+		    Postdoc Christopher Ketter received the Belle II Technical Thesis Award.
+		</li>
+	    </ul>
+	</section>
+
+        <!-- Lab Overview -->
+        <section id="lab-overview" class="feature-section">
+            <p class="section-kicker">Focus</p>
+            <h2>Join Our Group!</h2>
+            <p>We connect accelerator diagnostics, electronics R&amp;D, Belle II detector operation,
+            and physics analysis. Join us to work with international teams and develop hands-on skills.
+            </p>
+            <ul class="focus-grid">
+                <li><strong>Accelerator diagnostics</strong><span>BOR / XRM / SuperKEKB beam instrumentation</span></li>
+                <li><strong>Electronics R&amp;D</strong><span>Open-source ASIC, FPGA/RFSoC, and low-latency AI/ML</span></li>
+                <li><strong>Belle II operation</strong><span>KLM / TOP readout, firmware, and trigger upgrades</span></li>
+                <li><strong>Physics analysis</strong><span>Semileptonic BSM and dark-sector searches</span></li>
+            </ul>
+            <p>
+                Open to UH and international students. See <a href="prospective.html">Prospective Students</a>.
+            </p>
+        </section>
+
+        <!-- Carousel (optional, for visual appeal) -->
+        <div class="carousel">
+            <button class="arrow-left">&lt;</button>
+            <img src="figures/belle2.jpeg" alt="Belle II Detector" class="carousel-img active">
+            <img src="figures/collimator.jpeg" alt="Beam Collimator at SuperKEKB" class="carousel-img">
+            <img src="figures/topbs.png" alt="TOP Detector Board-Stack" class="carousel-img">
+            <button class="arrow-right">&gt;</button>
+        </div>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2 style="cursor: pointer;" onclick="toggleSection('contact-content', this)">
+                ▶ Contact
+            </h2>
+            <div id="contact-content" style="display: none;">
+                <ul>
+                    <li>Email: kyoshiha _at_ hawaii.edu</li>
+                    <li>Office: 2505 Correa Rd, WAT229, Honolulu, HI 96822</li>
+                    <li>Phone: (808) 956 2941</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Biography -->
+        <section id="bio">
+            <h2 style="cursor: pointer;" onclick="toggleSection('bio-content', this)">
+                ▶ Biography
+            </h2>
+            <div id="bio-content" class="bio-content" style="display: none;">
+                <ul>
+                    <li>
+                        <strong>Education:</strong>
+                        <ul>
+                            <li>Doctor of Philosophy, Physics, The University of Tokyo, 04/2011 - 09/2014 <br>
+                                Thesis: "Measurement of the Higgs boson couplings using the WW∗ → lνlν final state."
+                                <a href="https://inspirehep.net/authors/1074143">More on INSPIRE-HEP</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Professional Experience:</strong>
+                        <ul>
+                            <li>・ Assistant Professor, University of Hawai’i at Mānoa, 05/2024 - present</li>
+                            <li>・ Data Science Consultant, Accenture, 05/2023 - 03/2024</li>
+                            <li>・ Designated Associate Professor, Nagoya University KMI, 04/2021 - 04/2023</li>
+                            <li>・ Postdoctoral Fellow, Physics, Iowa State University, 10/2019 - 03/2021</li>
+                            <li>・ Postdoctoral Fellow, Physics, University of Pennsylvania, 10/2014 - 09/2019</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Awards:</strong>
+                        <ul>
+                            <li>・ ATLAS Outstanding Achievement Award, ATLAS, 01/2021</li>
+                            <li>・ Young Scientist Award of the Physical Society of Japan, JPS, 03/2016</li>
+                            <li>・ Incentive Award of the Japan Association of High Energy Physicists, JAHEP, 10/2015</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Leadership:</strong>
+                        <ul>
+                            <li>・ US Belle II Level-2 Manager (TOP Detector), 07/2025 - Present</li>
+                            <li>・ US Belle II Executive Committee Member, 01/2025 - Present</li>
+                            <li>・ Belle II Upgrade WG Coordinator of Outer Detector Sub-group, 09/2022 - 04/2023</li>
+                            <li>・ Belle II (deputy) Run Coordinator, 05/2020 - 04/2023</li>
+                            <li>・ Belle II KLM (deputy) Run Coordinator, 02/2020 - 03/2021</li>
+                            <li>・ ATLAS SUSY Background Forum Convener, 10/2017 - 09/2019</li>
+                            <li>・ ATLAS TRT DAQ Operation Leader, 04/2017 - 03/2019</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Keisuke Yoshihara, University of Hawaii at Manoa</p>
+    </footer>
+
+</body>
+</html>

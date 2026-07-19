@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research - Keisuke Yoshihara</title>
+    <link rel="stylesheet" href="style.css?v=20260524c">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <img src="figures/UHlogo.png" alt="University of Hawaii Logo" class="logo">
+        <h1>Yoshihara Group, University of Hawaii at Manoa</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="member.html">Members</a></li>
+            <li><a href="research.html" class="active">Research</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="prospective.html">Prospective Students</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="current-research" class="research-overview">
+    <p class="section-kicker">Research</p>
+    <h2>Current Research</h2>
+    <p class="research-lede">
+        Our work connects accelerator diagnostics, electronics R&amp;D, Belle II detector operation,
+        and physics analysis. We develop technologies that can move from
+        today's Belle II systems toward future experiments.
+    </p>
+    <div class="research-grid">
+        <article class="research-card research-card-feature">
+            <div class="research-card-image-pair">
+                <img class="research-card-image" src="figures/XRM_UPGRADE.png" alt="XRM upgrade readout concept">
+                <img class="research-card-image" src="figures/multi-BOR.png" alt="Multi-BOR timing and readout architecture">
+            </div>
+            <div>
+                <span class="research-date">2021-Present</span>
+                <h3>Beam Diagnosis &amp; Accelerator Instrumentation</h3>
+                <p>Fast beam diagnostic systems at SuperKEKB for understanding sudden beam loss events, including BOR and XRM.</p>
+                <p class="research-note">The XRM upgrade concept uses multi-channel X-ray sensor readout and RFSoC-based waveform digitization to measure fast beam-size changes.</p>
+            </div>
+            <div class="research-links">
+                <a href="https://indico.jacow.org/event/75/contributions/7009/attachments/768/2968/LM_20250304_KYoshihara_final.pdf" target="_blank">eeFACT2025</a>
+                <a href="https://conference-indico.kek.jp/event/299/contributions/6577/subcontributions/61/attachments/4443/7131/16.US-Japan_keisuke_yoshihara_SBL.pdf" target="_blank">US-Japan Symposium</a>
+                <a href="https://doi.org/10.1016/j.nima.2024.170117" target="_blank">NIM-A 2024</a>
+            </div>
+        </article>
+        <article class="research-card">
+            <img class="research-card-image" src="figures/RFSoC4x2.jpg" alt="RFSoC 4x2 board for fast waveform digitization and FPGA development">
+            <span class="research-date">2024-Present</span>
+            <h3>Electronics R&amp;D</h3>
+            <p>Foundational R&amp;D for future experiments, including open-source ASIC studies, FPGA/RFSoC-based readout, fast-timing digitizers, and hardware-aware AI/ML for low-latency applications.</p>
+            <div class="research-links">
+                <a href="teaching.html">PHYS476</a>
+                <a href="https://indico.phys.hawaii.edu/event/2506/contributions/7765/attachments/4166/5310/ML4FE_20250521_keisuke.pdf" target="_blank">ML4FE</a>
+                <a href="https://indico.phy.ornl.gov/event/510/contributions/2283/attachments/1756/4056/BelleII_Upgrade_CPAD2024_KY.pdf" target="_blank">CPAD2024</a>
+                <a href="https://doi.org/10.1016/j.nima.2025.170627" target="_blank">NIM-A 2025</a>
+            </div>
+        </article>
+        <article class="research-card">
+            <img class="research-card-image" src="figures/KLM_motherboard.png" alt="KLM readout motherboard">
+            <span class="research-date">2025-Present</span>
+            <h3>Belle II KLM and TOP Operation</h3>
+            <p>Detector operation and hardware support for Belle II KLM and TOP systems, including readout robustness, firmware, high-background operation, and KLM TRG upgrades.</p>
+            <div class="research-links">
+                <a href="https://doi.org/10.1016/j.nima.2025.170893" target="_blank">NIM-A 2025</a>
+            </div>
+        </article>
+        <article class="research-card">
+            <img class="research-card-image" src="figures/belle2.jpeg" alt="Belle II detector">
+            <span class="research-date">Belle II</span>
+            <h3>Physics Analysis: Semileptonic BSM Searches</h3>
+            <p>We are pursuing a direct search for right-handed heavy neutrinos in B-&gt;D* &ell; N decays, using semileptonic channels related to the R(D) and R(D*) anomalies. We also plan broader dark-sector searches at Belle II.</p>
+            <div class="research-links">
+                <a href="https://indico.kmi.nagoya-u.ac.jp/event/10/contributions/185/attachments/139/224/KeisukeYoshihara.pdf" target="_blank">KMI2025</a>
+            </div>
+        </article>
+    </div>
+    </section>
+
+    <section class="research-gallery">
+        <p class="section-kicker">Hardware</p>
+        <h2>Electronics, Test Benches, and Readout Systems</h2>
+        <div class="gallery-grid">
+            <figure>
+                <img src="figures/BOR_testbench.png" alt="BOR testbench with VPK120 and IDROGEN hardware">
+                <figcaption>BOR readout test bench</figcaption>
+            </figure>
+            <figure>
+                <img src="figures/XRM_testbench.jpg" alt="XRM testbench">
+                <figcaption>XRM test bench</figcaption>
+            </figure>
+            <figure>
+                <img src="figures/KLM_testbench.png" alt="KLM electronics test bench">
+                <figcaption>KLM electronics test bench</figcaption>
+            </figure>
+            <figure>
+                <img src="figures/KLM_motherboard.png" alt="KLM readout motherboard">
+                <figcaption>KLM readout motherboard</figcaption>
+            </figure>
+            <figure>
+                <img src="figures/TOP_testbench.jpg" alt="TOP electronics test bench">
+                <figcaption>TOP electronics test bench</figcaption>
+            </figure>
+            <figure>
+                <img src="figures/topbs.png" alt="TOP electronics board stack">
+                <figcaption>TOP detector electronics</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Past Research & Publications remain folded; will be added below if needed -->
+    <section id="past-research">
+        <h2 style="cursor: pointer;" onclick="toggleSection('past-research-content', this)">▶ Past Research</h2>
+        <div id="past-research-content" style="display: none;">
+            <ol>
+                <li><strong>Belle II Run Coordination (2020–2023)</strong> — Led daily operations and commissioning coordination.</li>
+                <li><strong>Beam Collimator Optimization (2020–2022)</strong> — Reduced beam background by tuning movable collimators.</li>
+                <li><strong>KLM Operation (2020–2021)</strong> — Reduced DAQ errors, implemented diagnostics with Elasticsearch.</li>
+                <li><strong>LHC-ATLAS SUSY Searches (2014–2020)</strong> — Conducted stop/Higgsino searches with ML.</li>
+                <li><strong>TRT Operation at ATLAS (2016–2019)</strong> — Maintained full TRT performance at high luminosity.</li>
+                <li><strong>Higgs → WW Analysis (2011–2014)</strong> — Developed fake-lepton suppression methods contributing to discovery.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="events">
+        <h2 style="cursor: pointer;" onclick="toggleSection('events-content', this)">▶ Events & Presentations</h2>
+        <div id="events-content" style="display: none;">
+        <h3>2025</h3>
+        <ul>
+            <li><strong>Violation of Fundamental Symmetries with B mesons Workshop at FermiLab</strong>
+                <ul>
+                    <li>・ The upgrade of the Belle II detector — <a href="https://indico.fnal.gov/event/71119/contributions/325816/attachments/194233/269441/BelleII_Upgrade_VFSB2025_KY.pdf" target="_blank">Slides</a></li>
+                </ul>
+            </li>
+            <li><strong>CEF Workshop: Versal and AI in FEE</strong>
+                <ul>
+                    <li>・ SuperKEKB BOR readout project — <a href="https://kds.kek.jp/event/57383/contributions/302184/attachments/196245/268794/BeamMon_20251201_keisuke.pdf" target="_blank">Slides</a></li>
+                    <li>・ Front-end AI/ML Opportunities at SuperKEKB/Belle II — <a href="https://kds.kek.jp/event/57383/contributions/302191/attachments/196314/268901/Belle_AIML_20251202_keisuke.pdf" target="_blank">Slides</a></li>
+                </ul>
+            </li>
+            <li><strong>CPAD2025 Workshop at UPenn</strong>
+                <ul>
+                    <li>・ Modern Electronics for Physicists — <a href="https://indico.global/event/14966/contributions/134019/attachments/63357/122285/CPAD_20251009_yoshihara.pdf" target="_blank">Slides</a></li>
+                </ul>
+            </li>
+            <li><strong>Belle II Summer Workshop at Virginia Tech</strong>
+                <ul>
+                    <li>・ Machine Detector Interface (MDI) — <a href="https://indico.belle2.org/event/14599/contributions/93903/attachments/35255/52240/keisuke_MDI_B2WS_20250627_v2.pdf" target="_blank">Slides</a></li>
+                </ul>
+            </li>
+            <li><strong>ML4FE Workshop at Hawaii (Host)</strong>
+                <ul>
+                    <li>・ Modern Electronics for Physicists — <a href="https://indico.phys.hawaii.edu/event/2506/contributions/7765/attachments/4166/5310/ML4FE_20250521_keisuke.pdf" target="_blank">Slides</a></li>
+                </ul>
+            </li>
+            <li><strong>US-Japan Symposium 2025 at Sapporo</strong>
+                <ul>
+                    <li>・ Modern Electronics for Physicists — <a href="https://conference-indico.kek.jp/event/299/contributions/6577/subcontributions/64/attachments/4451/7132/19.US-Japan_keisuke_yoshihara_PHYS476.pdf" target="_blank">Slides</a></li>
+                    <li>・ Advanced Beam Diagnostic and Abort Systems — <a href="https://conference-indico.kek.jp/event/299/contributions/6577/subcontributions/61/attachments/4443/7131/16.US-Japan_keisuke_yoshihara_SBL.pdf" target="_blank">Slides</a></li>
+                </ul>
+            </li>
+            <li><strong>KMI2025 Symposium at Nagoya</strong>
+                <ul>
+                    <li>・ Current Status and Prospects of B Physics — <a href="https://indico.kmi.nagoya-u.ac.jp/event/10/contributions/185/attachments/139/224/KeisukeYoshihara.pdf" target="_blank">Slides</a></li>
+                </ul>
+            </li>
+            <li><strong>eeFACT2025 at Tsukuba</strong>
+                <ul>
+                    <li>・ Belle II Loss Monitor Activities for Understanding the SBL Mechanism — <a href="https://indico.jacow.org/event/75/contributions/7009/attachments/768/2968/LM_20250304_KYoshihara_final.pdf" target="_blank">Slides</a></li>
+                </ul>
+            </li>
+            <li><strong>US-Japan Beam Monitor Workshop (Host)</strong></li>
+        </ul>
+
+        <h3>2024</h3>
+        <ul>
+            <li><strong>CPAD2024 Workshop at Tennessee</strong>
+                <ul>
+                    <li>・ Belle II Upgrade Program — <a href="https://indico.phy.ornl.gov/event/510/contributions/2283/attachments/1756/4056/BelleII_Upgrade_CPAD2024_KY.pdf" target="_blank">Slides</a></li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2 style="cursor: pointer;" onclick="toggleSection('pub-content', this)">▶ Selected Publications</h2>
+        <div id="pub-content" style="display: none;">
+            <ol>
+                <li><strong>Design and Commissioning of Readout Electronics for a KL and muon Detector at the Belle II Experiment</strong><br>Journal: NIM-A (submitted), <a href="https://doi.org/10.48550/arXiv.2502.02724" target="_blank">arXiv:2502.02724</a></li>
+                <li><strong>The Imaging Time-of-Propagation Detector at Belle II</strong><br>Journal: NIM-A, <a href="https://doi.org/10.1016/j.nima.2024.170117" target="_blank">DOI: 10.1016/j.nima.2025.170627</a></li>
+                <li><strong>Development and implementation of advanced beam diagnostic and abort systems in SuperKEKB</strong><br>Journal: NIM-A, <a href="https://doi.org/10.1016/j.nima.2024.170117" target="_blank">DOI: 10.1016/j.nima.2024.170117</a></li>
+                <li><strong>Measured and projected beam backgrounds in the Belle II experiment at the SuperKEKB collider</strong><br>Journal: NIM-A, <a href="https://doi.org/10.1016/j.nima.2023.168550" target="_blank">DOI: 10.1016/j.nima.2023.168550</a></li>
+                <li><strong>Search for new phenomena with top quark pairs in final states...</strong><br>Journal: JHEP04(2021)174, <a href="https://doi.org/10.1007/JHEP04(2021)174" target="_blank">DOI: 10.1007/JHEP04(2021)174</a></li>
+                <li><strong>Radiative and electroweak penguin decay at Belle II</strong><br>
+                    Proceedings: BEAUTY 2020 Conference, PoS(BEAUTY2020)019</li>
+                <li><strong>Search for direct stop pair production with the ATLAS detector</strong><br>
+                    Proceedings: 2019 APS Division of Particles and Fields Meeting, arXiv:1910.05162</li>
+                <li><strong>Search for direct pair production of third generation squarks with the ATLAS detector</strong><br>
+                    Proceedings: EPS-HEP2019, PoS(EPS-HEP2019)581</li>
+                <li><strong>Search for 3rd generation superpartners with the ATLAS experiment</strong><br>
+                    Proceedings: 2017 APS Division of Particles and Fields Meeting, arXiv:1710.02386</li>
+                <li><strong>Search for supersymmetric partners of third generation quarks in leptonic channels with the ATLAS detector</strong><br>
+                    Proceedings: LHC Physics Conference 2017, arXiv:1709.01053</li>
+                <li><strong>Search for top squarks in final states with one isolated lepton, jets, and missing transverse momentum in √s = 13TeV pp collisions with the ATLAS detector</strong><br>
+                    Journal: Phys. Rev. D94, 052009 (2016)</li>
+                <li><strong>Observation and measurement of Higgs boson decays to WW∗ with the ATLAS detector</strong><br>
+                    Journal: Phys. Rev. D92, 012006 (2015)</li>
+                <li><strong>Determination of spin and parity of the Higgs boson in the WW∗ → eνμν decay channel with the ATLAS detector</strong><br>
+                    Journal: Eur. Phys. J. C75 (2015) 231</li>
+                <li><strong>Measurements of Higgs boson production and couplings in diboson final states with the ATLAS detector at the LHC</strong><br>
+                    Journal: Phys. Lett. B726 (2013) 88</li>
+                <li><strong>Evidence for the spin-0 nature of the Higgs boson using ATLAS data</strong><br>
+                    Journal: Phys. Lett. B726 (2013) 120</li>
+                <li><strong>Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC</strong><br>
+                    Journal: Phys. Lett. B716 (2012) 1-29</li>
+                <li><strong>Search for the Higgs boson in the H → WW∗ → lνlν decay channel in pp collisions at √s = 7 TeV with the ATLAS detector</strong><br>
+                    Journal: Phys. Rev. Lett. 108.111802 (2012)</li>
+            </ol>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Keisuke Yoshihara, University of Hawaii at Manoa</p>
+</footer>
+</body>
+</html>
