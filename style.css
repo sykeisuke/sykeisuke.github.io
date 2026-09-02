@@ -53,6 +53,13 @@ header {
     gap: 12px;
 }
 
+.header-logos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 0 0 auto;
+}
+
 header h1 {
     margin: 0;
     font-size: clamp(1.25rem, 2.4vw, 1.9rem);
@@ -61,8 +68,21 @@ header h1 {
 }
 
 header .logo {
-    width: 64px;
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
     margin-bottom: 0;
+}
+
+header .group-logo {
+    width: 56px;
+    height: 56px;
+}
+
+.logo-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.28);
 }
 
 /* Nav */
@@ -959,6 +979,16 @@ a:hover {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    header .logo {
+        width: 52px;
+        height: 52px;
+    }
+
+    header .group-logo {
+        width: 50px;
+        height: 50px;
     }
 
     nav ul{
