@@ -42,7 +42,7 @@
                 <a href="prospective.html">Join the Group</a>
             </div>
         </div>
-        <div class="hero-media" aria-label="Detector electronics">
+        <div class="hero-media">
             <img src="figures/topbs.png" alt="TOP detector electronics board stack">
             <div class="hero-research-area">
                 <img src="figures/research_area.jpg" alt="Research areas connecting physics, computer science, and electrical engineering">
@@ -84,7 +84,15 @@
 		<li>
 		    <span class="news-date">Sep 4, 2026</span>
 		    Keisuke Yoshihara gave an ICS 690 seminar at the University of Hawaiʻi at Mānoa, <em>Real-Time Computing for Particle Physics: From AI on FPGA to AI Agents</em>, covering FPGA-based real-time computing, AI acceleration on hardware, and AI-agent systems for chip design and scientific data analysis.
-		    <a href="documents/ICS690_Seminar_Flyer_20260904.pdf">View the seminar flyer</a>.
+		    <a href="documents/ICS690_Seminar_Flyer_20260904.pdf">View the seminar flyer (PDF)</a>.
+		    <details class="text-version">
+		        <summary>Seminar details (text version of the flyer)</summary>
+		        <p><strong>ICS 690 Seminar, Information &amp; Computer Sciences</strong><br>
+		        Friday, September 4, 2026, 12:30&ndash;1:30 PM, AgSci 220</p>
+		        <p><strong>Speaker:</strong> Keisuke Yoshihara, Assistant Professor, Physics &amp; Astronomy, University of Hawaiʻi at Mānoa. Ph.D., University of Tokyo. Currently working on SuperKEKB/Belle II; previously worked on the LHC-ATLAS experiment at CERN.</p>
+		        <p><strong>Abstract:</strong> Modern particle physics experiments are among the world&rsquo;s most demanding computing systems, processing enormous data streams in real time. Experiments such as Belle II require detector information to be analyzed within only a few microseconds for event triggering and data acquisition. This seminar introduces the computing challenges behind modern collider experiments and presents recent developments in FPGA-based real-time computing, AI acceleration on hardware, and AI-agent systems for chip design and scientific data analysis. The talk will also highlight opportunities for interdisciplinary collaboration between computer science and experimental physics through research and education at UH.</p>
+		        <p><strong>Research themes:</strong> real-time systems, FPGA acceleration, AI agents, scientific data.</p>
+		    </details>
 		</li>
 		<li>
 		    <span class="news-date">Aug 28, 2026</span>
@@ -157,18 +165,17 @@
 
         <!-- Carousel (optional, for visual appeal) -->
         <div class="carousel">
-            <button class="arrow-left">&lt;</button>
+            <button type="button" class="arrow-left" aria-label="Previous image"><span aria-hidden="true">&lt;</span></button>
             <img src="figures/belle2.jpeg" alt="Belle II Detector" class="carousel-img active">
             <img src="figures/collimator.jpeg" alt="Beam Collimator at SuperKEKB" class="carousel-img">
             <img src="figures/topbs.png" alt="TOP Detector Board-Stack" class="carousel-img">
-            <button class="arrow-right">&gt;</button>
+            <button type="button" class="arrow-right" aria-label="Next image"><span aria-hidden="true">&gt;</span></button>
+            <button type="button" class="carousel-pause" aria-label="Pause slideshow">Pause</button>
         </div>
 
         <!-- Contact -->
         <section id="contact">
-            <h2 style="cursor: pointer;" onclick="toggleSection('contact-content', this)">
-                ▶ Contact
-            </h2>
+            <h2><button type="button" class="section-toggle" aria-expanded="false" aria-controls="contact-content" onclick="toggleSection('contact-content', this)"><span class="toggle-arrow" aria-hidden="true">▶</span> Contact</button></h2>
             <div id="contact-content" style="display: none;">
                 <ul>
                     <li>Email: kyoshiha _at_ hawaii.edu</li>
@@ -180,9 +187,7 @@
 
         <!-- Biography -->
         <section id="bio">
-            <h2 style="cursor: pointer;" onclick="toggleSection('bio-content', this)">
-                ▶ Biography
-            </h2>
+            <h2><button type="button" class="section-toggle" aria-expanded="false" aria-controls="bio-content" onclick="toggleSection('bio-content', this)"><span class="toggle-arrow" aria-hidden="true">▶</span> Biography</button></h2>
             <div id="bio-content" class="bio-content" style="display: none;">
                 <ul>
                     <li>

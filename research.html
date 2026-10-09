@@ -125,7 +125,7 @@
 
     <!-- Past Research & Publications remain folded; will be added below if needed -->
     <section id="past-research">
-        <h2 style="cursor: pointer;" onclick="toggleSection('past-research-content', this)">▶ Past Research</h2>
+        <h2><button type="button" class="section-toggle" aria-expanded="false" aria-controls="past-research-content" onclick="toggleSection('past-research-content', this)"><span class="toggle-arrow" aria-hidden="true">▶</span> Past Research</button></h2>
         <div id="past-research-content" style="display: none;">
             <ol>
                 <li><strong>Belle II Run Coordination (2020–2023)</strong> — Led daily operations and commissioning coordination.</li>
@@ -139,7 +139,7 @@
     </section>
 
     <section id="events">
-        <h2 style="cursor: pointer;" onclick="toggleSection('events-content', this)">▶ Events & Presentations</h2>
+        <h2><button type="button" class="section-toggle" aria-expanded="false" aria-controls="events-content" onclick="toggleSection('events-content', this)"><span class="toggle-arrow" aria-hidden="true">▶</span> Events & Presentations</button></h2>
         <div id="events-content" style="display: none;">
         <h3>2025</h3>
         <ul>
@@ -200,7 +200,7 @@
     </section>
 
     <section id="publications">
-        <h2 style="cursor: pointer;" onclick="toggleSection('pub-content', this)">▶ Selected Publications</h2>
+        <h2><button type="button" class="section-toggle" aria-expanded="false" aria-controls="pub-content" onclick="toggleSection('pub-content', this)"><span class="toggle-arrow" aria-hidden="true">▶</span> Selected Publications</button></h2>
         <div id="pub-content" style="display: none;">
             <ol>
                 <li><strong>Design and Commissioning of Readout Electronics for a KL and muon Detector at the Belle II Experiment</strong><br>Journal: NIM-A (submitted), <a href="https://doi.org/10.48550/arXiv.2502.02724" target="_blank">arXiv:2502.02724</a></li>

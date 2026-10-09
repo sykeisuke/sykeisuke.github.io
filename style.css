@@ -207,6 +207,25 @@ a:hover {
 }
 
 .arrow-left { left: 10px; }
+
+.carousel-pause {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    font: inherit;
+    font-size: 0.85em;
+    cursor: pointer;
+}
+
+.carousel-pause:hover {
+    background-color: rgba(0, 0, 0, 0.82);
+}
 .arrow-right { right: 10px; }
 
 .arrow-left:hover, .arrow-right:hover {
@@ -256,7 +275,7 @@ a:hover {
 .eyebrow,
 .section-kicker {
     margin: 0 0 8px;
-    color: #00a99d;
+    color: #00756e;
     font-size: 0.76em;
     font-weight: 800;
     letter-spacing: 0.14em;
@@ -265,6 +284,16 @@ a:hover {
 
 .hero .eyebrow {
     color: #f5cf5a;
+}
+
+/* Kickers that sit on dark images keep a light color (contrast >= 4.5:1) */
+.members-hero .section-kicker,
+.prospective-hero .section-kicker {
+    color: #f5cf5a;
+}
+
+.prospective-hero .section-kicker {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
 
 .hero-actions {
@@ -451,7 +480,7 @@ a:hover {
 .news-list li:first-child {
     grid-column: 1 / -1;
     background:
-        linear-gradient(100deg, rgba(6, 38, 54, 0.95), rgba(0, 112, 107, 0.86)),
+        linear-gradient(100deg, rgba(6, 38, 54, 0.95), rgba(0, 84, 80, 0.94)),
         url('figures/topbs.png');
     background-size: cover;
     background-position: center;
@@ -569,7 +598,7 @@ a:hover {
 }
 
 .research-date {
-    color: #00877f;
+    color: #00756e;
     font-size: 0.75em;
     font-weight: 850;
     letter-spacing: 0.12em;
@@ -1171,4 +1200,44 @@ a:hover {
     .member-table .col-name {
         font-size: 1.05em;
     }
+}
+
+
+/* =========================
+   Accessibility helpers
+========================= */
+/* Collapsible section headings: a real button inside the h2 (keyboard + screen reader) */
+.section-toggle {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.section-toggle:focus-visible,
+.carousel-pause:focus-visible,
+.arrow-left:focus-visible,
+.arrow-right:focus-visible,
+.text-version summary:focus-visible {
+    outline: 3px solid #f5cf5a;
+    outline-offset: 3px;
+}
+
+/* Text versions of PDF flyers */
+.text-version {
+    margin-top: 10px;
+}
+
+.text-version summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.text-version p,
+.text-version ul {
+    margin: 8px 0 0;
 }
