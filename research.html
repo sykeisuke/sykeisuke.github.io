@@ -34,8 +34,8 @@
     <p class="section-kicker">Research</p>
     <h2>Current Research</h2>
     <p class="research-lede">
-        Our work connects accelerator diagnostics, electronics R&amp;D, Belle II detector operation,
-        and physics analysis. We develop technologies that can move from
+        Our work connects beam diagnosis and accelerator operation, ASIC R&amp;D, Belle II detector
+        operation, and physics analysis. We develop technologies that can move from
         today's Belle II systems toward future experiments.
     </p>
     <div class="research-grid">
@@ -46,7 +46,7 @@
             </div>
             <div>
                 <span class="research-date">2021-Present</span>
-                <h3>Beam Diagnosis &amp; Accelerator Instrumentation</h3>
+                <h3>Beam Diagnosis</h3>
                 <p>Fast beam diagnostic systems at SuperKEKB for understanding sudden beam loss events, including BOR and XRM.</p>
                 <p class="research-note">The XRM upgrade concept uses multi-channel X-ray sensor readout and RFSoC-based waveform digitization to measure fast beam-size changes.</p>
             </div>
@@ -54,21 +54,28 @@
                 <a href="https://indico.jacow.org/event/75/contributions/7009/attachments/768/2968/LM_20250304_KYoshihara_final.pdf" target="_blank">eeFACT2025</a>
                 <a href="https://conference-indico.kek.jp/event/299/contributions/6577/subcontributions/61/attachments/4443/7131/16.US-Japan_keisuke_yoshihara_SBL.pdf" target="_blank">US-Japan Symposium</a>
                 <a href="https://arxiv.org/abs/2607.08205" target="_blank" rel="noopener">SiXRM Preprint</a>
+                <a href="https://indico.global/event/17230/contributions/169984/" target="_blank" rel="noopener">CPAD2026</a>
                 <a href="https://doi.org/10.1016/j.nima.2024.170117" target="_blank">NIM-A 2024</a>
             </div>
         </article>
         <article class="research-card">
-            <img class="research-card-image" src="figures/RFSoC4x2.jpg" alt="RFSoC 4x2 board for fast waveform digitization and FPGA development">
-            <span class="research-date">2024-Present</span>
-            <h3>Electronics R&amp;D</h3>
-            <p>Foundational R&amp;D for future experiments, including open-source ASIC studies, FPGA/RFSoC-based readout, fast-timing digitizers, and hardware-aware AI/ML for low-latency applications.</p>
+            <img class="research-card-image" src="figures/asic_chip_layout.jpg" alt="Full-chip layout of the first open-source waveform digitizer test chip">
+            <span class="research-date">2026-Present</span>
+            <h3>ASIC R&amp;D</h3>
+            <p>We are developing an open-source waveform digitizer ASIC. The chip follows the architecture of the IRSX, a waveform-sampling chip developed at UH, and is designed entirely with an open process design kit (GF180MCU) and open-source tools. The full design is public, and the whole chip is rebuilt and verified every night from the repository.</p>
+            <p class="research-note">The first chip is a small test design that exercises the whole flow, from circuit to manufacturing files. Vikas Kumar presented the project at CPAD 2026 as a talk and a poster, and his poster received one of the workshop's two poster awards.</p>
             <div class="research-links">
-                <a href="https://github.com/sykeisuke/asic_rd" target="_blank" rel="noopener">Open-source ASIC R&amp;D</a>
+                <a href="https://github.com/sykeisuke/asic_rd" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://indico.global/event/17230/contributions/170018/" target="_blank" rel="noopener">CPAD2026</a>
+                <a href="https://www.phys.hawaii.edu/professor-keisuke-yoshihara-launches-open-source-asic-readout-chip-development-effort-for-high-energy-physics/" target="_blank" rel="noopener">UH News</a>
                 <a href="teaching.html">PHYS476</a>
-                <a href="https://indico.phys.hawaii.edu/event/2506/contributions/7765/attachments/4166/5310/ML4FE_20250521_keisuke.pdf" target="_blank">ML4FE</a>
-                <a href="https://indico.phy.ornl.gov/event/510/contributions/2283/attachments/1756/4056/BelleII_Upgrade_CPAD2024_KY.pdf" target="_blank">CPAD2024</a>
-                <a href="https://doi.org/10.1016/j.nima.2025.170627" target="_blank">NIM-A 2025</a>
             </div>
+        </article>
+        <article class="research-card">
+            <img class="research-card-image" src="figures/collimator.jpeg" alt="Beam collimator at SuperKEKB">
+            <span class="research-date">2020-Present</span>
+            <h3>Accelerator Operation: Background Mitigation and Collimator Studies</h3>
+            <p>Reducing beam-induced background at Belle II with collimators at SuperKEKB. Keisuke Yoshihara has worked on the movable collimators in the main ring, tuning them to reduce detector background. We are now starting collimator studies in the beam-transport line to reduce injection background, beginning with beam-dynamics simulation to find which collimators are most effective.</p>
         </article>
         <article class="research-card">
             <img class="research-card-image" src="figures/KLM_motherboard.png" alt="KLM readout motherboard">
@@ -77,6 +84,7 @@
             <p>Detector operation and hardware support for Belle II KLM and TOP systems, including readout robustness, firmware, high-background operation, and KLM TRG upgrades.</p>
             <div class="research-links">
                 <a href="https://arxiv.org/abs/2608.27814" target="_blank" rel="noopener">TOP DAQ Preprint</a>
+                <a href="https://doi.org/10.1016/j.nima.2025.170627" target="_blank">TOP NIM-A 2025</a>
                 <a href="https://doi.org/10.1016/j.nima.2025.170893" target="_blank">NIM-A 2025</a>
             </div>
         </article>
