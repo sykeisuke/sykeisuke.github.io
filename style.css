@@ -1256,3 +1256,9 @@ a:hover {
 .text-version ul {
     margin: 8px 0 0;
 }
+
+/* Wide figure (diagram + photo) in the feature card: show it whole */
+.research-card .research-card-image.research-card-image-wide {
+    height: auto;
+    object-fit: contain;
+}
