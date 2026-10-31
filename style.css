@@ -1262,3 +1262,25 @@ a:hover {
     height: auto;
     object-fit: contain;
 }
+
+/* Group photo on the Members page */
+.group-photo {
+    margin: 0 0 22px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(8, 91, 91, 0.14);
+    box-shadow: 0 18px 44px rgba(10, 45, 55, 0.16);
+    background: #fff;
+}
+
+.group-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.group-photo figcaption {
+    padding: 8px 14px;
+    font-size: 0.9em;
+    color: #405962;
+}
