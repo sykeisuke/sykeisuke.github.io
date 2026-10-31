@@ -1265,7 +1265,8 @@ a:hover {
 
 /* Group photo on the Members page */
 .group-photo {
-    margin: 0 0 22px;
+    max-width: 720px;
+    margin: 0 auto 22px;
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid rgba(8, 91, 91, 0.14);
